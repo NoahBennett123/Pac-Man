@@ -1,7 +1,7 @@
 import pygame, sys, time, random
 from pygame.locals import *
 
-p_pic = [pygame.imagae.load('recources/pac.pic.png)]
+p_pic = [pygame.image.load('pac.pic.png')]
 
 class pac_class(pygame.sprite.Sprite):
 
@@ -9,7 +9,7 @@ class pac_class(pygame.sprite.Sprite):
         super().__init__()
 
         self.image = p_pic
-        self.imgage = pygame.transform.scale(FROG, (25,25))
+        self.imgage = pygame.transform.scale(p_pic, (25,25))
         self.x = 100
         self.y = 100
         self.rect = pygame.rect(self.x, self.y, 25, 25)
