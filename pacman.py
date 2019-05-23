@@ -9,7 +9,7 @@ class pac_class(pygame.sprite.Sprite):
         super().__init__()
 
         self.image = p_pic
-        self.imgage = pygame.transform.scale(p_pic, (25,25))
+        self.image = pygame.transform.scale(p_pic, (25,25))
         self.x = 100
         self.y = 100
         self.rect = pygame.rect(self.x, self.y, 25, 25)
