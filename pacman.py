@@ -1,7 +1,7 @@
 import pygame, sys, time, random
 from pygame.locals import *
 
-p_pic = [pygame.image.load('pac.pic.png')]
+p_pic = pygame.image.load('pac.pic.png')
 
 class pac_class(pygame.sprite.Sprite):
 
@@ -10,9 +10,9 @@ class pac_class(pygame.sprite.Sprite):
 
         self.image = p_pic
         self.image = pygame.transform.scale(p_pic, (25,25))
-        self.x = 100
-        self.y = 100
-        self.rect = pygame.rect(self.x, self.y, 25, 25)
+        self.x = 300
+        self.y = 300
+        self.rect = pygame.Rect(self.x, self.y, 25, 25)
 
     def up(self):
         self.rect.y = self.rect.y - 25
